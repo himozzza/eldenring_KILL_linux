@@ -15,7 +15,7 @@ do
         sleep 2
         ((attempts++))
     else
-        echo -ne "$(date +%F%t%T)\nИгра зарущена с $attempts раза.\n\n" >> /home/"$USER"/EldenRing.log
+        echo -ne "$(date +%F%t%T)\nИгра запущена с $attempts раза.\n\n" >> /home/"$USER"/EldenRing.log
         stop_flag=false
     fi
 done
